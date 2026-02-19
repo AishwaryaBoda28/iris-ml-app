@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.main-card {
+    background-color: #1e1e2f;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.title {
+    font-weight: bold;
+    color: #00d4ff;
+}
+
+.custom-input {
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #00d4ff;
+    box-shadow: 0 0 10px #00d4ff;
+}
+
+.custom-btn {
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.custom-btn:hover {
+    transform: scale(1.05);
+    background-color: #00d4ff;
+    border-color: #00d4ff;
+}
+
+canvas {
+    margin-top: 20px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Iris ML App</title>
+
+<style>
+body{
+    font-family: Arial;
+    background: linear-gradient(120deg,#74ebd5,#ACB6E5);
+    text-align:center;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    width:420px;
+    margin:auto;
+    box-shadow:0 0 20px gray;
+}
+
+input,button{
+    width:90%;
+    padding:10px;
+    margin:8px;
+    border-radius:8px;
+}
+
+button{
+    background:#4CAF50;
+    color:white;
+    border:none;
+}
+
+.result{
+    font-size:20px;
+    color:#333;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h2>🌸 Iris Flower Predictor</h2>
+
+<form action="/predict" method="post">
+<input name="sepal_length" placeholder="Sepal Length" required>
+<input name="sepal_width" placeholder="Sepal Width" required>
+<input name="petal_length" placeholder="Petal Length" required>
+<input name="petal_width" placeholder="Petal Width" required>
+<button>Predict</button>
+</form>
+
+<div class="result">
+{{ prediction }}
+</div>
+
+<br>
+<a href="/history">📊 View Prediction History</a>
+
+</div>
+</body>
+</html>
